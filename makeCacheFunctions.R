@@ -20,8 +20,10 @@ makeCacheMatrix <- function(x = matrix()){        # creating function makeCacheM
        getInverse  = getInverse)
 }
 
+## For the second function, we take the other matrix.
+## IF the Inverse Matrix exists, then it was already calculated and stored before. If not, it saves it in cache.
 
-cacheSolve <- function(x, ...){                   # # creating function cacheSolve, X is the input Matrix
+cacheSolve <- function(x, ...){                   # creating function cacheSolve, X is the input Matrix
   
   inv <- x$getInverse()
   if(!is.null(inv)) {
