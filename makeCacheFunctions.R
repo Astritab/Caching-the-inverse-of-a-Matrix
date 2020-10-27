@@ -36,3 +36,20 @@ cacheSolve <- function(x, ...){                   # creating function cacheSolve
   x$setInverse(inv)
   inv
 }
+
+# Testing both functions and how they are working with directo and inverse Matrix, using cache options.
+# > myTest_Matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
+# > myTest_Matrix$get()
+#       [,1] [,2]
+# [1,]    1    3
+# [2,]    2    4
+# > cacheSolve(myTest_Matrix)         First time, the Inverse matrix is not in cache. It's computed and stored in cache
+#       [,1] [,2]
+# [1,]   -2  1.5
+# [2,]    1 -0.5
+# > cacheSolve(myTest_Matrix)         Second time (and so on), the Inverse Matrix is in Cache. It's not computed, is retrieved from cache.
+# getting cached result
+#       [,1] [,2]
+# [1,]   -2  1.5
+# [2,]    1 -0.5
+# 
