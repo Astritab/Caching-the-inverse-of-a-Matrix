@@ -1,13 +1,16 @@
-makeVector <- function(x = numeric()) {
-  m <- NULL
+
+
+makeCacheMatrix <- function(x = matrix()){
+  inv <- NULL
   set <- function(y) {
     x <<- y
-    m <<- NULL
+    inv <<- NULL
   }
-  get <- function() x
-  setmean <- function(mean) m <<- mean
-  getmean <- function() m
+  
+  get <- function()x
+  setInverse  <- function(inverse) inv <<- inverse
+  getInverse  <- function() inv
   list(set = set, get = get,
-       setmean = setmean,
-       getmean = getmean)
+       setInverse  = setInverse,
+       getInverse  = getInverse)
 }
