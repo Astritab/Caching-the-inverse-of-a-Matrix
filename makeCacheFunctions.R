@@ -37,7 +37,8 @@ cacheSolve <- function(x, ...){                   # creating function cacheSolve
   inv
 }
 
-# Testing both functions and how they are working with directo and inverse Matrix, using cache options.
+# Testing both functions and how they are working with straight and inverse Matrix, using cache options.
+# 
 # > myTest_Matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
 # > myTest_Matrix$get()
 #       [,1] [,2]
@@ -53,4 +54,4 @@ cacheSolve <- function(x, ...){                   # creating function cacheSolve
 # [1,]   -2  1.5
 # [2,]    1 -0.5
 # 
-#
+# END TESTING !!!
